@@ -2,10 +2,14 @@ package main
 
 import "fmt"
 
-// package scope (allows un-used variables)
-var z int = 100
+// package scoped variables
+// var app_version string = "1.1.0"
+var app_version = "1.1.0"
 
-// z := 100 (NOT ALLOWED)
+// app_version := "1.1.0" //==> will not work
+
+// unused variable at package scope
+var p_unused_var int = 100
 
 func main() {
 	/*
