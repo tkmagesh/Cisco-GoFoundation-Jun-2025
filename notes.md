@@ -141,3 +141,7 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 
 ## IOTA
 - values for a `group` of constants can be auto-generated
+
+## Functions
+- Can return more than one result
+- Variadic functions
