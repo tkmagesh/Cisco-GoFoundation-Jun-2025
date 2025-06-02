@@ -61,3 +61,13 @@
     - Standard Library API support
         - `sync` package
         - `sync/atomic` package
+
+## Compilation
+```shell
+go build [filename.go]
+```
+
+## Compile & Execute
+```shell
+go run [filename.go]
+```
