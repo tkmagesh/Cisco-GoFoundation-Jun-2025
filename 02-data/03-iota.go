@@ -69,6 +69,7 @@ func main() {
 		X = 1 << iota
 		W
 		R
+
 		XW  = X | W
 		WR  = W | R
 		XWR = X | W | R
