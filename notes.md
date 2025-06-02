@@ -148,3 +148,7 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 - Anonymous functions
     - Cannot have a name
     - Must be immediately invoked
+- Higher Order Functions (functions as `data`)
+    - Assign functions as values to variables
+    - Pass functions as arguments
+    - Return functions as return values
