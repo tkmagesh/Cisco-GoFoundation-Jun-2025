@@ -12,6 +12,9 @@
 | Tea Break | 3:00 PM (20 mins)
 | Wind Up | 5:00 PM |
 
+
+## Repository
+- https://github.com/tkmagesh/cisco-gofoundation-jun-2025
 ## Methodology
 - No powerpoint
 - Discuss & Code
@@ -26,3 +29,35 @@
 - Visual Studio Code (Or any other editor)
     - Go Extension for VSCode (https://marketplace.visualstudio.com/items?itemName=golang.Go)
 
+
+## Why Go?
+1. Simplicity
+    - ONLY 25 keywords
+    - No access modifiers (public, private, protected etc)
+    - No reference types (everything is a value)
+    - No pointer arithmatic
+    - No classes (only structs)
+    - No inheritance (only composition)
+    - No exceptions (only errors)
+    - No "try..catch..finally"
+    - No implicit type conversions
+2. Performance
+    - Close to hardware
+        - Compiled to machine code (like C & C++)
+        - `Cross compilation` support is enabled in the compiler
+    - No need for a VM
+        - How is memory managed (where is the GC)?
+    - Performance comparable to C++
+3. Concurrency Support
+    - Concurrent operations are represented as `Goroutines`
+    - `Goroutines` are very cheap (2 KB) when compared to OS Threads (~2MB)
+    - Support for concurrency is offered `through the language`
+        - Language features for concurrency
+            - `go` keyword
+            - `chan` data type
+            - `<-` operator 
+            - `range` construct
+            - `select-case` construct
+    - Standard Library API support
+        - `sync` package
+        - `sync/atomic` package
