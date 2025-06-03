@@ -4,9 +4,10 @@ package main
 import "fmt"
 
 type Product struct {
-	Id   int
-	Name string
-	Cost float64
+	Id       int
+	Name     string
+	Cost     float64
+	Category string
 }
 
 func main() {
@@ -59,6 +60,7 @@ func main() {
 	fmt.Println("Before applying discount, p: ", Format(p))
 	ApplyDiscount(&p, 10) // apply 10% discount on p
 	fmt.Println("After applying discount, p: ", Format(p))
+
 }
 
 // Assignment
