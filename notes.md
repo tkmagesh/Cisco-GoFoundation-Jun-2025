@@ -265,3 +265,5 @@ go list -m all
 
 ### Go mod command reference
 - https://go.dev/ref/mod
+
+## Structs

@@ -41,7 +41,7 @@ func main() {
 	// accessing the elements using the "pointer to an array"
 	fmt.Println((*nosPtr)[0])
 
-	// dereferencing is not needed when the members of a container is accessed thorugh a pointer
+	// dereferencing is not needed when the members of a container is accessed through a pointer
 	fmt.Println(nosPtr[0])
 
 	fmt.Println("Before sorting : nos = ", nos)
