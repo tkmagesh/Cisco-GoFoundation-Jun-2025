@@ -166,3 +166,6 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 - `copy()` to create a copy of the slice with the data
 - `cap()` to get the overall memory allocated (initialized + uninitialized) 
 ### Map
+- typed collection of key/value pairs
+- has to be initialized with `make()` 
+- `delete()` to remove an item
