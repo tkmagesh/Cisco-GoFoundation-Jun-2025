@@ -153,3 +153,9 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
     - Pass functions as arguments
     - Return functions as return values
 - Deferred functions
+
+## Collections
+### Array
+- Fixed sized typed collection
+### Slice
+### Map
