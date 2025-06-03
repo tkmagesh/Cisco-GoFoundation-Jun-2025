@@ -29,6 +29,7 @@ func main() {
 	// check for the existence of key
 	// keyToCheck := "mouse" //non existant key
 	keyToCheck := "pencil"
+
 	if rank, exists := productRanks[keyToCheck]; exists {
 		fmt.Printf("Rank of %q is %d\n", keyToCheck, rank)
 	} else {
