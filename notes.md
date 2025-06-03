@@ -169,3 +169,11 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 - typed collection of key/value pairs
 - has to be initialized with `make()` 
 - `delete()` to remove an item
+
+## Error Handling
+- An error is just a value in go that is returned from a function
+- by practice, an error value should implement `error` interface
+- Creating an error
+    - `errors.New()`
+    - `fmt.Errorf()`
+    - custom type that implements `error` interface
