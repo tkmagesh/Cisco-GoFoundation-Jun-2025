@@ -187,3 +187,40 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 
 ### Recover
 - use `recover()` to recover from a panic
+
+## Modules & Packages
+### Module
+- Any code that need to versioned & deployed together
+- A folder with `go.mod` file
+
+#### go.mod
+- manifest file for the module
+- contains
+    - name of the module
+        - good to have the complete repo path
+    - go version
+    - references to dependent modules (libraries, frameworks etc)
+
+##### Create a go.mod file
+```shell
+go mod init [module_name]
+```
+
+#### To run a module
+```shell
+go run .
+```
+
+#### To build a module
+```shell
+go build .
+```
+
+### Package
+- logical grouping of code in a module
+- typically just a folder
+- All the code in the package folder across 'go' files are considered to be belonging to the package
+- Accessibility is determined by the name of the entity
+    - private (name starts with lowercase)
+    - public (name starts with uppercase)
+
