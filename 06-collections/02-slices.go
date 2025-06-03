@@ -54,6 +54,10 @@ func main() {
 	fmt.Println("After sorting : nos = ", nos)
 
 	// How to create a copy?
+	nosCopy := make([]int, len(nos))
+	copy(nosCopy, nos)
+	nosCopy[0] = -8888
+	fmt.Printf("nosCopy[0] = %d, nos[0] = %d\n", nosCopy[0], nos[0])
 }
 
 func sortSlice(list []int) { // no return result
