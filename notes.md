@@ -158,4 +158,8 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 ### Array
 - Fixed sized typed collection
 ### Slice
+- Varying sized typed collection
+- `append()` to add new items
+- `len()` to get the # of items in the slice
+- **IMPORTANT** : A slice is a `pointer` to an underlying array
 ### Map
