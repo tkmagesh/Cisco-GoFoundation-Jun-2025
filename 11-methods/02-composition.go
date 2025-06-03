@@ -4,10 +4,9 @@ package main
 import "fmt"
 
 type Product struct {
-	Id       int
-	Name     string
-	Cost     float64
-	Category string
+	Id   int
+	Name string
+	Cost float64
 }
 
 func (p Product) Format() string {
@@ -28,16 +27,32 @@ func (pp PerishableProduct) Format() string {
 	return fmt.Sprintf("%s, Expiry = %q", pp.Product.Format(), pp.Expiry)
 }
 
+// Utility factory function to help with creating instances of PerishableProduct
+func NewPerishableProduct(id int, name string, cost float64, expiry string) *PerishableProduct {
+	return &PerishableProduct{
+		Product: Product{
+			Id:   id,
+			Name: name,
+			Cost: cost,
+		},
+		Expiry: expiry,
+	}
+}
+
 func main() {
 
-	var milk = PerishableProduct{
-		Product: Product{
-			Id:   200,
-			Name: "Milk",
-			Cost: 50,
-		},
-		Expiry: "2 Days",
-	}
+	/*
+		var milk = PerishableProduct{
+			Product: Product{
+				Id:   200,
+				Name: "Milk",
+				Cost: 50,
+			},
+			Expiry: "2 Days",
+		}
+	*/
+
+	var milk = NewPerishableProduct(200, "Milk", 50, "2 Days")
 
 	fmt.Println("Before applying discount, milk: ", milk.Format())
 	milk.ApplyDiscount(10)
