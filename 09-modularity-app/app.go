@@ -8,10 +8,14 @@ import (
 
 	// using an alias
 	ut "github.com/tkmagesh/cisco-gofoundation-jun-2025/09-modularity-app/calculator/utils"
+
+	"github.com/fatih/color"
 )
 
 func run() {
-	fmt.Println("application executed")
+	// fmt.Println("application executed")
+	color.Yellow("application executed")
+
 	fmt.Println(calculator.Add(100, 200))
 	fmt.Println(calculator.Subtract(100, 200))
 	fmt.Println("Operation count :", calculator.OpCount())

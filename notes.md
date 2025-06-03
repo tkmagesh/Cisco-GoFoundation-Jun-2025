@@ -224,3 +224,44 @@ go build .
     - private (name starts with lowercase)
     - public (name starts with uppercase)
 
+### Using 3rd party libraries/frameworks/tools
+#### To add a reference a dependency
+
+```shell
+go get [module]
+
+# example:
+go get github.com/fatih/color
+```
+[code downloaded to `$GOPATH/PKG` folder]
+
+#### To use a CLI built in go
+```shell
+go install [module]
+
+```
+[code downloaded, build and the binary is installed in the `$GOPATH/BIN` folder ]
+
+#### To update the references in th go.mod file based on the usage of the modules
+```shell
+go mod tidy
+```
+
+#### To download the dependencies
+```shell
+go mod download
+```
+
+#### Other useful commands
+```shell
+go mod graph
+```
+```shell
+go mod why [module_name]
+```
+```shell
+go list -m all
+```
+
+### Go mod command reference
+- https://go.dev/ref/mod
