@@ -45,10 +45,24 @@ func main() {
 	fmt.Println(nosPtr[0])
 
 	fmt.Println("Before sorting : nos = ", nos)
-	sort( /* ? */ ) // sort the 'nos' array
+	sort(&nos) // sort the 'nos' array
 	fmt.Println("After sorting : nos = ", nos)
+
+	x := [5]int{32, 7, 43, 56, 4}
+	y := [5]int{32, 7, 43, 56, 4}
+	fmt.Printf("address of x = %p\n", &x)
+	fmt.Printf("address of y = %p\n", &y)
+
+	// compared by values
+	fmt.Println("x == y : ", x == y)
 }
 
-func sort( /* ? */ ) { // no return result
-
+func sort(list *[5]int) { // no return result
+	for i := 0; i < (5 - 1); i++ {
+		for j := i + 1; j < 5; j++ {
+			if list[i] > list[j] {
+				list[i], list[j] = list[j], list[i]
+			}
+		}
+	}
 }
