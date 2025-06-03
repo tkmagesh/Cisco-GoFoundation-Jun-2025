@@ -20,7 +20,6 @@ func main() {
 }
 
 // Named results
-
 func divide(multiplier, divisor int) (quotient, remainder int, err error) { // quotient, remainder & err is automatically declared & initialized with the zero values
 	if divisor == 0 {
 		err = ErrDivideByZero
