@@ -270,9 +270,30 @@ go list -m all
 
 ## Concurrency
 **Concurrency IS NOT parallelism**
+
 ### Concurrency Design
 Designing the application in such a way the application has more than one execution path
 
+---
+#### Cooperative Multitasking
+![image](./images/cooperative-multitasking.png)
+
+---
+
+#### Preemptive Multitasking
+![image](./images/preemptive-multitasking.png)
+
+---
+
+#### Concurrency vs Parallelism
+![image](./images/concurrnecy-vs-parallelism.png)
+
+---
+
+### Go Concurrency Model
+![image](./images/go-concurrency.png)
+
+---
 ### WaitGroup
 - Semaphore based counter
 - Has the ability to block the execution of a function until the counter becomes 0
