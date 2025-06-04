@@ -267,3 +267,12 @@ go list -m all
 - https://go.dev/ref/mod
 
 ## Structs
+
+## Concurrency
+**Concurrency IS NOT parallelism**
+### Concurrency Design
+Designing the application in such a way the application has more than one execution path
+
+### WaitGroup
+- Semaphore based counter
+- Has the ability to block the execution of a function until the counter becomes 0
