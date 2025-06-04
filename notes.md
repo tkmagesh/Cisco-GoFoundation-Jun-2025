@@ -276,3 +276,35 @@ Designing the application in such a way the application has more than one execut
 ### WaitGroup
 - Semaphore based counter
 - Has the ability to block the execution of a function until the counter becomes 0
+
+### Channel
+- Data type to enable communication between goroutines
+
+#### Declaration
+```go
+var ch chan int
+```
+
+#### Initilization
+```go
+ch = make(chan int)
+```
+
+#### Declaration & Initialization
+```go
+var ch chan int = make(chan int)
+// OR
+var ch = make(chan int)
+// OR
+ch := make(chan int)
+```
+
+#### Channel Operation (using `<-` operator)
+##### Send Operation
+```go
+ch <- 100
+```
+##### Receive Operation
+```go
+<- ch
+```
