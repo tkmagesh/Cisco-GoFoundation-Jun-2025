@@ -21,5 +21,4 @@ func main() {
 func increment(wg *sync.WaitGroup) {
 	defer wg.Done()
 	atomic.AddInt64(&count, 1)
-
 }
